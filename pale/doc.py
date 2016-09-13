@@ -58,18 +58,6 @@ def generate_json_docs(module, pretty_print=False):
             separators=separators)
     return json_str
 
-def generate_raml_docs(module):
-    """Return a RAML string format of a Pale module's documentation.
-
-    This string can either be printed out, written to a file, or piped to some
-    other tool.
-
-    This method is a shorthand for calling `generate_doc_dict` and passing
-    it into a RAML serializer.
-    """
-    module_doc_dict = generate_doc_dict(module)
-
-    return 'TODO - create the RAML generator here'
 
 def generate_doc_dict(module):
     """Compile a Pale module's documentation into a python dictionary.
